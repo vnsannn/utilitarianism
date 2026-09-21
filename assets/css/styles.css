@@ -493,7 +493,7 @@ section::before {
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: rgba(240, 236, 226, 0.4);
-  margin-bottom: 6px;
+  margin-bottom: 16px;
 }
 
 .hero-presenter {
@@ -505,13 +505,15 @@ section::before {
 }
 
 .hero-team-name {
+  display: inline-block;
   font-family: var(--display);
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #f0ece2;
-  margin-bottom: 12px;
+  margin: 0 0 0 12px;
+  vertical-align: -2px;
 }
 
 .hero-team {

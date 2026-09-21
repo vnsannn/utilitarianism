@@ -8,7 +8,7 @@ A live, interactive presentation on **Utilitarianism** — the moral doctrine th
 
 ## 🌐 View the Site
 
-👉 **[Open the live presentation](https://vnsannn.github.io/wj-self/)**
+👉 **[Open the live presentation](https://vnsannn.github.io/utilitarianism/)**
 
 Scroll through six sections: About, Origins (timeline), Nature, Critiques, Business Fascination, and Conclusion.
 
