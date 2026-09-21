@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utilitarianism | Greatest Happiness for the Greatest Number</title>
+
+  <meta name="description" content="An interactive presentation on Utilitarianism: the moral doctrine that an action is right insofar as it promotes the greatest happiness for the greatest number.">
+  <meta name="author" content="Vien Fritzgerald V. Calderon">
+  <meta name="theme-color" content="#241f18">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Utilitarianism | Greatest Happiness for the Greatest Number">
+  <meta property="og:description" content="An interactive presentation on Utilitarianism: its origins, nature, critiques, and the business fascination with it.">
+  <meta property="og:image" content="assets/images/portrait.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Utilitarianism | Greatest Happiness for the Greatest Number">
+  <meta name="twitter:description" content="An interactive presentation on Utilitarianism: origins, nature, critiques, and the business fascination.">
+  <meta name="twitter:image" content="assets/images/portrait.jpg">
+
+  <link rel="icon" href="assets/images/favicon.jpg" type="image/jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <canvas class="cursor-canvas" id="cursorCanvas" aria-hidden="true"></canvas>
+
+  <nav class="nav hero-dock visible" id="mainNav" aria-label="Primary">
+    <div class="nav-brand">Utilitarianism</div>
+    <div class="nav-wrap">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#origins">Origins</a></li>
+        <li><a href="#nature">Nature</a></li>
+        <li><a href="#critiques">Critiques</a></li>
+        <li><a href="#business">Business</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+      <div class="nav-indicator" id="navIndicator" aria-hidden="true"></div>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" type="button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <button class="mobile-menu-close" id="mobileMenuClose" type="button" aria-label="Close menu">&times;</button>
+    <ul class="mobile-menu-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#origins">Origins</a></li>
+      <li><a href="#nature">Nature</a></li>
+      <li><a href="#critiques">Critiques</a></li>
+      <li><a href="#business">Business</a></li>
+      <li><a href="#conclusion">Conclusion</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-image">
+      <img src="assets/images/portrait.jpg" alt="Portrait of Jeremy Bentham by Henry William Pickersgill" width="900" height="1144" loading="eager" decoding="async">
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag">Ethics &amp; Moral Philosophy</div>
+      <h1 class="hero-title">Utilitarianism</h1>
+      <div class="hero-title-sub">The Greatest Happiness for the Greatest Number</div>
+      <div class="hero-divider"></div>
+      <div class="hero-presenter-label">Presented by</div>
+      <div class="hero-team-name">Team 4</div>
+      <ul class="hero-team">
+        <li>CALDERON, VIEN FRITZGERALD V.</li>
+        <li>CAMACHO, PRINCESS NINA Q.</li>
+        <li>CAPANANG, ICE WYETH</li>
+        <li>DELIVA, FRANZEUS ANDREI B.</li>
+        <li>ORENA, CHRISTIAN M.</li>
+        <li>VILLACORTA, SHAINNAH G.</li>
+      </ul>
+    </div>
+    <div class="hero-bottom">
+      <span>Scroll to explore</span>
+      <div class="hero-scroll-line" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section-pad" id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-portrait about-feast reveal">
+          <img src="assets/images/about-trolley.png" alt="Sketch of the trolley problem: do nothing and five people die, or switch tracks and one person dies" width="640" height="640" loading="lazy" decoding="async" class="zoomable" title="Click to expand">
+          <div class="about-portrait-caption">The trolley problem &mdash; Image: Jono Hey, <a href="https://sketchplanations.com" target="_blank" rel="noopener">Sketchplanations</a></div>
+        </div>
+        <div>
+          <div class="section-number reveal">01</div>
+          <h2 class="section-heading reveal reveal-delay-1">What is <em>Utilitarianism</em>?</h2>
+          <ul class="kp-list">
+            <li class="reveal reveal-delay-1">
+              <div class="kp-bullet" aria-hidden="true"></div>
+              <span class="kp-text"><strong>The moral doctrine that an action is right as long as it promotes the greatest happiness for the greatest number</strong></span>
+            </li>
+            <li class="reveal reveal-delay-2">
+              <div class="kp-bullet" aria-hidden="true"></div>
+              <span class="kp-text"><strong>Consequences matter</strong> more than intentions</span>
+            </li>
+            <li class="reveal reveal-delay-3">
+              <div class="kp-bullet" aria-hidden="true"></div>
+              <span class="kp-text"><strong>Everyone counts equally:</strong> your happiness is worth no more than a stranger's</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ORIGINS ===== -->
+  <section class="section-pad book-section" id="origins">
+    <div class="section-inner">
+      <div class="book-grid">
+        <div>
+          <div class="section-number reveal">02</div>
+          <h2 class="section-heading reveal reveal-delay-1">Origins: from <em>Epicurus</em> to Mill</h2>
+          <ol class="timeline">
+            <li class="tl-item reveal reveal-delay-1">
+              <span class="tl-dot" aria-hidden="true"></span>
+              <div class="tl-body"><span class="tl-year">341&ndash;270 BC</span><span class="tl-name">Epicurus</span>
+                <p class="tl-text">Pleasure is the beginning and end of the blessed life.</p>
+              </div>
+            </li>
+            <li class="tl-item reveal reveal-delay-2">
+              <span class="tl-dot" aria-hidden="true"></span>
+              <div class="tl-body"><span class="tl-year">18th Century</span><span class="tl-name">Hume &amp; Paley</span>
+                <p class="tl-text">&ldquo;Utility&rdquo; enters British moral philosophy as the measure of value.</p>
+              </div>
+            </li>
+            <li class="tl-item reveal reveal-delay-3">
+              <span class="tl-dot" aria-hidden="true"></span>
+              <div class="tl-body"><span class="tl-year">1789</span><span class="tl-name">Jeremy Bentham</span>
+                <p class="tl-text"><em>An Introduction to the Principles of Morals and Legislation.</em> Mankind governed by pain and pleasure; the felicific calculus measures it by intensity, duration, certainty, and extent.</p>
+              </div>
+            </li>
+            <li class="tl-item reveal reveal-delay-4">
+              <span class="tl-dot" aria-hidden="true"></span>
+              <div class="tl-body"><span class="tl-year">1863</span><span class="tl-name">John Stuart Mill</span>
+                <p class="tl-text"><em>Utilitarianism.</em> Higher pleasures over lower: &ldquo;actions are right in proportion as they tend to promote happiness.&rdquo;</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <div class="book-cover-wrap reveal">
+          <div class="mini-gallery">
+            <figure class="mg-featured">
+              <img id="mgMain" src="assets/images/origins-epicurus.jpg" alt="Epicurus" width="220" height="275" loading="lazy" decoding="async" class="zoomable" title="Click to expand">
+            </figure>
+            <div class="mg-caption">
+              <span class="mg-name" id="mgName">Epicurus</span>
+              <span class="mg-dates" id="mgDates">341&ndash;270 BC</span>
+            </div>
+            <div class="mg-thumbs" role="group" aria-label="Choose a philosopher portrait">
+              <button type="button" class="mg-thumb active" data-src="assets/images/origins-epicurus.jpg" data-name="Epicurus" data-dates="341&ndash;270 BC" aria-label="Show Epicurus"><img src="assets/images/origins-epicurus.jpg" alt="" width="220" height="275" loading="lazy"></button>
+              <button type="button" class="mg-thumb" data-src="assets/images/origins-hume.jpg" data-name="David Hume" data-dates="1711&ndash;1776" aria-label="Show David Hume"><img src="assets/images/origins-hume.jpg" alt="" width="220" height="275" loading="lazy"></button>
+              <button type="button" class="mg-thumb" data-src="assets/images/origins-paley.jpg" data-name="William Paley" data-dates="1743&ndash;1806" aria-label="Show William Paley"><img src="assets/images/origins-paley.jpg" alt="" width="220" height="275" loading="lazy"></button>
+              <button type="button" class="mg-thumb" data-src="assets/images/origins-bentham.jpg" data-name="Jeremy Bentham" data-dates="1748&ndash;1832" aria-label="Show Jeremy Bentham"><img src="assets/images/origins-bentham.jpg" alt="" width="220" height="275" loading="lazy"></button>
+              <button type="button" class="mg-thumb" data-src="assets/images/origins-mill.jpg" data-name="John Stuart Mill" data-dates="1806&ndash;1873" aria-label="Show John Stuart Mill"><img src="assets/images/origins-mill.jpg" alt="" width="220" height="275" loading="lazy"></button>
+            </div>
+          </div>
+          <div class="book-cover-label">The five thinkers behind utilitarianism</div>
+          <div class="visual-credit">Portraits: Wikimedia Commons, public domain</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NATURE ===== -->
+  <section class="section-pad meself-section" id="nature">
+    <div class="section-inner">
+      <div class="section-number reveal">03</div>
+      <h2 class="section-heading reveal reveal-delay-1">The <em>Nature</em> of the Doctrine</h2>
+
+      <div class="me-cards nat-cards">
+        <div class="me-card reveal reveal-delay-1">
+          <svg class="me-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <circle cx="12" cy="12" r="6"/>
+            <circle cx="12" cy="12" r="2"/>
+          </svg>
+          <div class="me-card-title">Consequentialist</div>
+          <div class="me-card-sub">Judged by Outcomes</div>
+          <p class="me-card-text">Morality is judged by results, not intentions.</p>
+        </div>
+        <div class="me-card reveal reveal-delay-2">
+          <svg class="me-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"/>
+          </svg>
+          <div class="me-card-title">Hedonistic</div>
+          <div class="me-card-sub">Pleasure as the Only Good</div>
+          <p class="me-card-text">Pleasure is the only intrinsic good; pain the only intrinsic bad.</p>
+        </div>
+        <div class="me-card reveal reveal-delay-3">
+          <svg class="me-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+          <div class="me-card-title">Impartial</div>
+          <div class="me-card-sub">Everybody Counts for One</div>
+          <p class="me-card-text">Everyone's happiness counts equally; nobody for more than one.</p>
+        </div>
+        <div class="me-card reveal reveal-delay-1">
+          <svg class="me-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="3 17 9 11 13 15 21 7"/>
+            <polyline points="15 7 21 7 21 13"/>
+          </svg>
+          <div class="me-card-title">Maximizing</div>
+          <div class="me-card-sub">Greatest Net Happiness</div>
+          <p class="me-card-text">One must always produce the greatest possible balance of happiness.</p>
+        </div>
+        <div class="me-card reveal reveal-delay-2">
+          <svg class="me-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <div class="me-card-title">Universal</div>
+          <div class="me-card-sub">No Exceptions</div>
+          <p class="me-card-text">The principle applies to all persons and all actions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CRITIQUES ===== -->
+  <section class="section-pad" id="critiques">
+    <div class="section-inner">
+      <div class="section-number reveal">04</div>
+      <h2 class="section-heading reveal reveal-delay-1">Critiques: <em>six objections</em></h2>
+
+      <div class="cr-grid">
+        <div class="cr-card reveal reveal-delay-1">
+          <div class="cr-num">Objection I</div>
+          <div class="cr-title">The Justice Objection</div>
+          <p class="cr-text">Can justify punishing the innocent if it raises total happiness (Rawls, 1971).</p>
+        </div>
+        <div class="cr-card reveal reveal-delay-2">
+          <div class="cr-num">Objection II</div>
+          <div class="cr-title">The Demandingness Objection</div>
+          <p class="cr-text">Every spare resource owed to strangers; nothing is merely &ldquo;above duty.&rdquo;</p>
+        </div>
+        <div class="cr-card reveal reveal-delay-3">
+          <div class="cr-num">Objection III</div>
+          <div class="cr-title">The Integrity Objection</div>
+          <p class="cr-text">Demands betrayal of one's own convictions (Williams, 1973).</p>
+        </div>
+        <div class="cr-card reveal reveal-delay-1">
+          <div class="cr-num">Objection IV</div>
+          <div class="cr-title">The Measurement Objection</div>
+          <p class="cr-text">Happiness cannot be quantified or compared between people.</p>
+        </div>
+        <div class="cr-card reveal reveal-delay-2">
+          <div class="cr-num">Objection V</div>
+          <div class="cr-title">Neglect of Intentions &amp; Character</div>
+          <p class="cr-text">Only outcomes count; motives are ignored.</p>
+        </div>
+        <div class="cr-card reveal reveal-delay-3">
+          <div class="cr-num">Objection VI</div>
+          <div class="cr-title">The Value Objection</div>
+          <p class="cr-text">Ranking pleasures secretly abandons hedonism (Moore).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BUSINESS ===== -->
+  <section class="section-pad summary-section" id="business">
+    <div class="section-inner">
+      <div class="section-number reveal">05</div>
+      <h2 class="section-heading reveal reveal-delay-1">The Business <em>Fascination</em></h2>
+
+      <div class="biz-grid">
+        <ul class="kp-list">
+          <li class="reveal reveal-delay-1">
+            <div class="kp-bullet" aria-hidden="true"></div>
+            <span class="kp-text"><strong>Same operative logic:</strong> weigh costs against benefits, choose the greatest net gain</span>
+          </li>
+          <li class="reveal reveal-delay-2">
+            <div class="kp-bullet" aria-hidden="true"></div>
+            <span class="kp-text"><strong>Descendants of the felicific calculus:</strong> cost-benefit analysis, ROI, risk assessment</span>
+          </li>
+          <li class="reveal reveal-delay-3">
+            <div class="kp-bullet" aria-hidden="true"></div>
+            <span class="kp-text"><strong>Legitimizes hard calls:</strong> the pain of a few outweighed by benefit to the many (Friedman)</span>
+          </li>
+          <li class="reveal reveal-delay-4">
+            <div class="kp-bullet" aria-hidden="true"></div>
+            <span class="kp-text"><strong>Underpins CSR &amp; stakeholder theory:</strong> the greatest happiness principle in managerial language</span>
+          </li>
+        </ul>
+        <aside class="comp-card reveal reveal-delay-2">
+          <div class="comp-title">The Complication</div>
+          <ul class="comp-list">
+            <li>Quantified benefits can mask exploitation of a minority</li>
+            <li>Human dignity resists conversion into a number</li>
+            <li>Short-term gains can hide long-term harms</li>
+          </ul>
+          <p class="comp-close">Calculation should discipline moral judgment, not replace it.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONCLUSION ===== -->
+  <section class="section-pad meself-section" id="conclusion">
+    <div class="section-inner">
+      <div class="section-number reveal">06</div>
+      <h2 class="section-heading reveal reveal-delay-1">Conclusion</h2>
+      <blockquote class="iself-quote concl-quote reveal reveal-delay-2">
+        Utilitarianism offers one clear standard, the greatest happiness for the greatest number, but its strength is its weakness: efficiency can justify injustice and reduce dignity to numbers. Business embraces it, yet what benefits the many is not always right. It is one lens among several, to be tested against justice and dignity.
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded image" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image">&times;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  </div>
+
+  <footer>
+    Copyright &copy; <span id="footerYear">2026</span> iennn.dev. All rights reserved.
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
